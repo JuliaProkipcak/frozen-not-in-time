@@ -1,3 +1,213 @@
 html {
   font-family: "Fredoka One", cursive;
 }
+
+.body {
+  filter: blur(16px) opacity(0);
+  animation: body .3s 1.2s linear forwards;
+  transform: translate(2.25em, -4.75em);
+}
+
+.head {
+  filter: blur(16px) opacity(0);
+  animation: head .3s 1.2s linear forwards;
+  transform: translate(2.25em, -4.75em);
+}
+
+.card {
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1%, #d4fdff 2%, #c9fcff 2.1%);
+  border-top: solid 8px #b3fbff;
+  border-bottom: solid 8px #b3fbff;
+}
+
+.enjoy {
+  filter: blur(16px) opacity(0);
+  animation: enjoy .3s 1.2s linear forwards;
+  transform: translate(-6em, 5.8em);
+}
+
+h1 {
+  color: #990073;
+  max-width: 19em;
+  position: absolute;
+  transform-origin: left center;
+  transform: rotate(-10deg);
+}
+
+h2 {
+  color: #c09;
+  max-width: 19em;
+  position: absolute;
+  transform-origin: left center;
+  transform: rotate(-5deg);
+}
+
+.btn-ghost {
+  color: #c09;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: #990073;
+  text-shadow: 2px 2px rgba(0, 0, 0, .25);
+}
+
+.btn-ghost:hover {
+  color: #c09;
+  background-color: rgba(153, 0, 115, .2);
+  border-color: #990073;
+}
+
+.scoop {
+  left: 63%;
+  bottom: 100%;
+  width: 180px;
+  height: 180px;
+  transform: translateX(-50%);
+}
+
+.cone {
+  animation: cone .3s ease-in forwards;
+  position: absolute;
+  z-index: 5;
+}
+
+.mint {
+  animation: mint .3s .3s ease-in forwards;
+  position: absolute;
+  z-index: 5;
+}
+
+.chocolate {
+  animation: choco .3s .6s ease-in forwards;
+  position: absolute;
+  z-index: 5;
+}
+
+.vanilla {
+  animation: vanilla .3s .9s ease-in forwards;
+  position: absolute;
+  z-index: 5;
+}
+
+.cherry {
+  animation: cherry .3s 1.5s ease-in forwards;
+  position: absolute;
+  z-index: 5;
+}
+
+@media only screen and (min-wdith: 20em) {
+
+  .ice-cream {
+    position: relative;
+    height: 25em;
+  }
+
+}
+
+@media only screen and (min-wdith: 90em) {
+
+  .ice-cream {
+    position: relative;
+    height: 23.1em;
+  }
+
+}
+
+@keyframes head {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes body {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes enjoy {
+
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: blur(0);
+    filter: opacity(1);
+  }
+
+}
+
+@keyframes cone {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 104;
+  }
+
+}
+
+@keyframes choco {
+
+  0% {
+    bottom: 100%;
+    left: 65%;
+  }
+
+  100% {
+    bottom: 184;
+    left: 65%;
+  }
+
+}
+
+@@keyframes vanilla {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 264px;
+  }
+
+}
+
+@@keyframes cherry {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 344px;
+  }
+
+}
